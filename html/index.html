@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS RESET */
+        body {
+            
+            margin: 0px;
+            padding: 0px;
+            background: url(images.jpg);
+            height: 3000px;
+            font-style: italic;
+            color: rgb(150, 165, 178);
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 10px;
+            text-align: center;
+            /* border: 2px solid red; */
+            line-height: 0px;
+
+        }
+
+        .left img {
+            width: 45px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 13px auto;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 16px;
+            /* border: 2px solid red; */
+            
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+        }
+
+        .navbar li a {
+            color:rgb(150, 165, 178);
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 8px;
+            background-color: black;
+            color:rgb(141, 171, 198);
+            padding: 6px 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 38, 38);
+
+        }
+
+        .container {
+
+            border: 2px solid green;
+            width: 30%;
+            margin: 80px 33px;
+            padding: 56px 50px;
+            border-radius: 10px;
+
+        }
+
+        .form-group input {
+            background-color: rgb(174, 188, 200);
+            text-align: center;
+            display: block;
+            margin: auto;
+            width: 70%;
+            padding: 4px 11px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container button {
+            padding: 3px; 
+            margin: 7px 50px;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="download.png" alt="">
+            <div>Aubair Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Join The Best Gym Of Sopore Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
